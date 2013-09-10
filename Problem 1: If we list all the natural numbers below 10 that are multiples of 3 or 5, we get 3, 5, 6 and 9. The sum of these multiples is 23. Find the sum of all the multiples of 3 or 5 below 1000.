@@ -1,0 +1,49 @@
+My Solution:
+#defining an array that shall contain all multiples of 3 till below 1000
+multiples_of_3=[]
+i=0
+while i<1000
+	if 	i%3==0
+		multiples_of_3.push(i)
+	end
+	i=i+1
+end
+p multiples_of_3
+
+#defining an array that shall contain all multiples of 5 till below 1000
+multiples_of_5=[]
+j=0
+while j<1000
+	if 	j%5==0
+		multiples_of_5.push(j)
+	end
+	j=j+1
+end
+p multiples_of_5
+
+#defining an array that shall contain all multiples of 15 till below 1000
+multiples_of_15=[]
+k=0
+while k<1000
+	if 	k%15==0
+		multiples_of_15.push(k)
+	end
+	k=k+1
+end
+p multiples_of_15
+
+#defining an array that shall contain all elements of multiples_of_3 and multiples_of_5 and no elements of multiples_of_15
+array_to_be_summed=multiples_of_5+multiples_of_3
+p array_to_be_summed
+array_to_be_summed=(array_to_be_summed)-(multiples_of_15)
+p array_to_be_summed
+
+#finding sum of all elements
+answer=0
+m=0
+while m<array_to_be_summed.length
+	answer=answer+array_to_be_summed[m]
+	m=m+1
+end
+
+p answer
