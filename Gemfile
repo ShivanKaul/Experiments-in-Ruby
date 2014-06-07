@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
-#ruby-gemset=rails_4_0. Refer to rvm in Godel.
+#ruby-gemset=rails_4_0. Refer to rvm in Godel. And Escher.
 
 gem 'rails', '4.0.5'
 
